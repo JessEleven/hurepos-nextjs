@@ -35,7 +35,7 @@ export default function ThemeSwitch () {
       </button>
 
       {open && (
-        <div className='absolute -right-5 p-[5px] mt-[41px] border border-neutral-300 dark:border-neutral-700 rounded-md shadow-lg'>
+        <div className='absolute z-50 bg-neutral-50 dark:bg-neutral-800 -right-[21px] p-[5px] mt-[41px] border border-neutral-300 dark:border-neutral-700 rounded-md shadow-md'>
           {options.map((op) => (
             <button
               key={op.value}
