@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.hover-icon {
+  @apply p-[5px] rounded-sm hover:bg-neutral-200 dark:hover:bg-neutral-700 duration-200 transition-colors ease-in-out
+}
