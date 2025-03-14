@@ -3,10 +3,11 @@ import Link from 'next/link'
 import Logo from '../../public/logo.svg'
 import { GitHubIcon } from '@/resources/assets/nav-icons'
 import ThemeSwitch from '@/providers/theme-switch'
+import MobileMenu from '@/components/mobile/mobile-menu'
 
 export default function Nav () {
   return (
-    <header className='mt-3 mx-5 md:mx-0 border px-5 py-[5px] rounded-md border-neutral-300 dark:border-neutral-700'>
+    <header className='mt-3 px-5 py-[5px] rounded-md border-0 md:border md:border-neutral-300 md:dark:border-neutral-700'>
       <div className='flex items-center justify-between'>
         <Link translate='no' href='/' className='flex items-center gap-x-1.5'>
           <Image
@@ -28,7 +29,7 @@ export default function Nav () {
           </a>
           <ThemeSwitch />
         </div>
-
+        <MobileMenu />
       </div>
     </header>
   )

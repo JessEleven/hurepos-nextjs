@@ -35,7 +35,7 @@ export default function ThemeSwitch () {
       </button>
 
       {open && (
-        <div className='absolute z-50 bg-neutral-50 dark:bg-neutral-800 -right-[21px] p-[5px] mt-[41px] border border-neutral-300 dark:border-neutral-700 rounded-md shadow-md'>
+        <article className='absolute z-40 bg-neutral-50 dark:bg-neutral-800 right-0 md:-right-[21px] -top-[5px] md:top-0 p-[5px] mt-[41px] border border-neutral-300 dark:border-neutral-700 rounded-md shadow-md'>
           {options.map((op) => (
             <button
               key={op.value}
@@ -50,7 +50,7 @@ export default function ThemeSwitch () {
               <span className='text-xs font-medium'>{op.label}</span>
             </button>
           ))}
-        </div>
+        </article>
       )}
     </div>
   )

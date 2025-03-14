@@ -5,3 +5,7 @@
 .hover-icon {
   @apply p-[5px] rounded-sm hover:bg-neutral-200 dark:hover:bg-neutral-700 duration-200 transition-colors ease-in-out
 }
+
+.dropdown {
+  @apply rounded-md bg-neutral-200 dark:bg-neutral-700 duration-500 transition-all ease-in-out
+}
