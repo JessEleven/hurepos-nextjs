@@ -57,19 +57,3 @@ export const SystemIcon = (props) => (
     <path d='M3 5a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5zM7 20h10M9 16v4M15 16v4' />
   </svg>
 )
-
-export const LoaderIcon = (props) => (
-  <svg
-    fill='none'
-    viewBox='0 0 24 24'
-    stroke='currentColor'
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    strokeWidth={2}
-    className='icon icon-tabler icons-tabler-outline icon-tabler-loader'
-    {...props}
-  >
-    <path stroke='none' d='M0 0h24v24H0z' />
-    <path d='M12 6V3M16.25 7.75 18.4 5.6M18 12h3M16.25 16.25l2.15 2.15M12 18v3M7.75 16.25 5.6 18.4M6 12H3M7.75 7.75 5.6 5.6' />
-  </svg>
-)

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Logo from '../../public/logo.svg'
 import { GitHubIcon } from '@/resources/assets/nav-icons'
-import ThemeSwitch from '@/providers/theme-switch'
+import ThemeDropdown from '@/components/theme-dropdown'
 import MobileMenu from '@/components/mobile/mobile-menu'
 
 export default function Nav () {
@@ -27,7 +27,7 @@ export default function Nav () {
           >
             <GitHubIcon className='w-5 h-5' />
           </a>
-          <ThemeSwitch />
+          <ThemeDropdown />
         </div>
         <MobileMenu />
       </div>

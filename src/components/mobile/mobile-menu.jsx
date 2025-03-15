@@ -1,6 +1,5 @@
 'use client'
 
-import ThemeSwitch from '@/providers/theme-switch'
 import { MenuDeepIcon, XIcon } from '@/resources/assets/mobile-icons'
 import { useState } from 'react'
 import MobileDropdown from './mobile-dropdown'
@@ -10,12 +9,14 @@ export default function MobileMenu () {
 
   return (
     <div className='z-40 block md:hidden'>
-      <div className='relative flex gap-x-[5px]'>
-        <button type='button' className='hover-icon' onClick={() => setOpen(!open)}>
-          {open ? <XIcon className='w-5 h-5' /> : <MenuDeepIcon className='w-5 h-5' />}
-        </button>
-        <ThemeSwitch />
-      </div>
+      <button
+        type='button'
+        onClick={() => setOpen(!open)}
+        aria-expanded={open}
+        className='hover-icon relative'
+      >
+        {open ? <XIcon className='w-5 h-5' /> : <MenuDeepIcon className='w-5 h-5' />}
+      </button>
 
       {open &&
         (

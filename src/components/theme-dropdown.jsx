@@ -1,23 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
-import { LoaderIcon, MoonIcon, SunIcon, SystemIcon } from '@/resources/assets/nav-icons'
+import { LoaderIcon } from '@/resources/assets/search-user-icons'
+import { themeOptions, useThemeLogic } from '@/utils/theme'
 
-const options = [
-  { value: 'light', label: 'Light', icon: <SunIcon /> },
-  { value: 'dark', label: 'Dark', icon: <MoonIcon /> },
-  { value: 'system', label: 'System', icon: <SystemIcon /> }
-]
-
-export default function ThemeSwitch () {
-  const [mounted, setMounted] = useState(false)
-  const [open, setOpen] = useState(false)
-  const { theme, setTheme } = useTheme()
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+export default function ThemeDropdown () {
+  const { mounted, open, setOpen, setTheme, selectedOption } = useThemeLogic()
 
   if (!mounted) {
     return (
@@ -26,7 +13,6 @@ export default function ThemeSwitch () {
       </div>
     )
   }
-  const selectedOption = options.find((opt) => opt.value === (theme))
 
   return (
     <div className='relative flex flex-1'>
@@ -36,7 +22,7 @@ export default function ThemeSwitch () {
 
       {open && (
         <article className='absolute z-40 bg-neutral-50 dark:bg-neutral-800 right-0 md:-right-[21px] -top-[5px] md:top-0 p-[5px] mt-[41px] border border-neutral-300 dark:border-neutral-700 rounded-md shadow-md'>
-          {options.map((op) => (
+          {themeOptions.map((op) => (
             <button
               key={op.value}
               type='button'

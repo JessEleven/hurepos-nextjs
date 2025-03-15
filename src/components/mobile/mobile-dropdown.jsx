@@ -1,5 +1,6 @@
 import { ChevronDownIcon, ChevronUpIcon } from '@/resources/assets/mobile-icons'
 import { useState } from 'react'
+import MobileTheme from './mobile-theme'
 
 export default function MobileDropdown () {
   const [activeDropdown, setActiveDropdown] = useState(false)
@@ -14,7 +15,7 @@ export default function MobileDropdown () {
         type='button'
         onClick={() => toggleDropdown('td-1')}
         aria-expanded={activeDropdown === 'td-1'}
-        className={`flex items-center justify-between px-3 py-1 w-full 
+        className={`flex items-center justify-between px-3 py-1 w-full
         ${activeDropdown === 'td-1' ? 'dropdown' : 'bg-transparent'}`}
       >
         <span className='text-base font-medium'>Repository</span>
@@ -49,6 +50,10 @@ export default function MobileDropdown () {
           Information content
         </article>
       )}
+
+      <div className='px-3 mt-3'>
+        <MobileTheme />
+      </div>
     </div>
   )
 }
