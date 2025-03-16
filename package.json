@@ -1,14 +1,15 @@
 {
   "name": "hurepos-nextjs",
   "description": "To search for information from GitHub users.",
-  "version": "0.6.5",
+  "version": "0.7.5",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "dev2": "cross-env NODE_NO_WARNINGS=1 next dev"
+    "dev-2": "cross-env NODE_NO_WARNINGS=1 next dev",
+    "fix-sync": "pnpm install --no-frozen-lockfile && git add . && git commit -m 'fix sync pnpm-lock.yaml with package.json' || echo 'No changes to commit'"
   },
   "dependencies": {
     "@tailwindcss/postcss": "4.0.13",
