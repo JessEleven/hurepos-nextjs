@@ -15,14 +15,14 @@ export default function MobileMenu () {
         aria-expanded={open}
         className='hover-icon relative'
       >
-        {open ? <XIcon className='w-5 h-5' /> : <MenuDeepIcon className='w-5 h-5' />}
+        {open ? <XIcon className='size-5' /> : <MenuDeepIcon className='size-5' />}
       </button>
 
       {open &&
         (
           <section
             role='region'
-            aria-label='Opciones de menú'
+            aria-label='Menu options'
             className='absolute bg-neutral-50 dark:bg-neutral-800 px-5 left-0 right-0 top-14 bottom-0'
           >
             <MobileDropdown />

@@ -9,7 +9,7 @@ export default function ThemeDropdown () {
   if (!mounted) {
     return (
       <div className='p-[5px] bg-neutral-200 dark:bg-neutral-700 rounded-sm'>
-        <LoaderIcon className='w-5 h-5 animate-spin' />
+        <LoaderIcon className='size-5 animate-spin' />
       </div>
     )
   }
@@ -17,7 +17,7 @@ export default function ThemeDropdown () {
   return (
     <div className='relative flex flex-1'>
       <button type='button' className='hover-icon cursor-pointer' onClick={() => setOpen(!open)}>
-        <h3 className='w-5 h-5'>{selectedOption?.icon}</h3>
+        <h3 className='size-5'>{selectedOption?.icon}</h3>
       </button>
 
       {open && (
@@ -32,7 +32,7 @@ export default function ThemeDropdown () {
               }}
               className='flex items-center w-full px-2 gap-1.5 py-[5px] rounded-sm hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors duration-300 ease-in-out cursor-pointer'
             >
-              <span className='w-4 h-4'>{op.icon}</span>
+              <span className='size-4'>{op.icon}</span>
               <span className='text-xs font-medium'>{op.label}</span>
             </button>
           ))}

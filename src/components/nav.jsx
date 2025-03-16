@@ -11,7 +11,7 @@ export default function Nav () {
       <div className='flex items-center justify-between'>
         <Link translate='no' href='/' className='flex items-center gap-x-1.5'>
           <Image
-            className='w-5 md:w-6'
+            className='size-6 md:size-7'
             src={Logo}
             alt='Logo'
             priority
@@ -21,11 +21,13 @@ export default function Nav () {
 
         <div className='hidden md:flex md:items-center md:gap-x-[5px]'>
           <a
+            datatype='GitHub'
             className='hover-icon'
             href='https://github.com/JessEleven/hurepos-nextjs'
-            target='_blank' rel='noreferrer'
+            rel='noreferrer'
+            target='_blank'
           >
-            <GitHubIcon className='w-5 h-5' />
+            <GitHubIcon className='size-5' />
           </a>
           <ThemeDropdown />
         </div>

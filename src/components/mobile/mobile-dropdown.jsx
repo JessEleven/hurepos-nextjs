@@ -21,8 +21,8 @@ export default function MobileDropdown () {
         <span className='text-base font-medium'>Repository</span>
 
         {activeDropdown === 'td-1'
-          ? <ChevronUpIcon className='w-5 h-5' />
-          : <ChevronDownIcon className='w-5 h-5' />}
+          ? <ChevronUpIcon className='size-5' />
+          : <ChevronDownIcon className='size-5' />}
       </button>
 
       {activeDropdown === 'td-1' && (
@@ -41,8 +41,8 @@ export default function MobileDropdown () {
         <span className='text-base font-medium'>Information</span>
 
         {activeDropdown === 'td-2'
-          ? <ChevronUpIcon className='w-5 h-5' />
-          : <ChevronDownIcon className='w-5 h-5' />}
+          ? <ChevronUpIcon className='size-5' />
+          : <ChevronDownIcon className='size-5' />}
       </button>
 
       {activeDropdown === 'td-2' && (

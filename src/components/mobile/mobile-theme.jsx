@@ -15,9 +15,9 @@ export default function MobileTheme () {
               setTheme(op.value)
               setOpen(false)
             }}
-            className={`flex items-center ${op.value === theme && 'text-sky-500'}`}
+            className={`flex items-center ${op.value === theme && 'text-emerald-500'}`}
           >
-            <span className='w-[18px] h-[18px]'>{op.icon}</span>
+            <span className='size-[18px]'>{op.icon}</span>
           </button>
         ))}
       </div>
