@@ -16,7 +16,7 @@ export default function SearchUser () {
 
   return (
     <form onSubmit={handleSubmit} className='mt-10 md:mt-[50px] mx-5 md:mx-0'>
-      <div className='flex items-center text-sm'>
+      <div className='flex items-center text-sm font-normal'>
         <div className='relative flex w-full bg-slate-800/75 rounded-md text-neutral-50'>
           <div className='flex absolute top-3.5 pl-5 text-neutral-50/75'>
             <SearchIcon className='size-4' />
@@ -32,20 +32,21 @@ export default function SearchUser () {
           />
           <div className='border-2 border-orange-500/75 rounded my-2' />
 
-          <button type='submit' className='py-3 2xl:min-w-[125px] min-w-[115px] disabled:cursor-progress flex items-center justify-center rounded-r-md'>
+          <button type='submit' className='py-3 2xl:min-w-[125px] min-w-[115px] disabled:cursor-progress flex items-center justify-center rounded-r-md cursor-pointer'>
             {loading
               ? (
                 <span className='flex items-center justify-center gap-x-1'>
                   <LoaderIcon className='size-5 animate-spin' />
-                  Buscando
+                  Searching
                 </span>
                 )
-              : (<span>Buscar</span>)}
+              : (<span>Search</span>)}
           </button>
         </div>
       </div>
+
       {error && (
-        <h3 className='mt-1.5 rounded-md text-sm font-normal py-[5px] px-5 bg-neutral-200 dark:bg-neutral-700'>
+        <h3 className='mt-2 rounded-md text-sm font-normal py-[5px] px-5 bg-neutral-200 dark:bg-neutral-700'>
           {error}
         </h3>
       )}

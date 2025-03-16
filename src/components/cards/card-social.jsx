@@ -16,8 +16,10 @@ function valideUrl (url) {
 }
 
 export default function CardSocial ({ data }) {
+  const result = (data?.location || data?.blog || data?.twitter_username || data?.company)
+
   return (
-    <div className='flex flex-col mt-4'>
+    <div className={`flex flex-col ${result ? 'mt-4' : 'mt-0'}`}>
       <div className='grid gap-4 grid-cols-1 md:grid-cols-2 font-medium'>
         {data.location && (
           <article className='media-card'>
