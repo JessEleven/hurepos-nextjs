@@ -1,3 +1,4 @@
+import apiResponse from '@/utils/api/api-response'
 import { fetchGitHubUser } from '@/utils/api/github'
 
 export async function GET (req) {
@@ -5,21 +6,42 @@ export async function GET (req) {
   const username = searchParams.get('username')
 
   if (!username) {
-    return new Response(
-      JSON.stringify({
-        error: 'No username provided'
-      }), { status: 400 }
+    return apiResponse.error(
+      400,
+      'No username provided'
     )
   }
 
   try {
     const userData = await fetchGitHubUser(username)
-    return new Response(
-      JSON.stringify(userData), { status: 200 }
+
+    return apiResponse.success(
+      200,
+      'User found successfully',
+      userData
     )
   } catch (error) {
-    return new Response(
-      JSON.stringify({ error: error.message }), { status: 404 }
+    // console.error('GitHub API error:', error)
+
+    if (error.response) {
+      if (error.response.status === 404) {
+        return apiResponse.error(
+          404,
+          'User not found'
+        )
+      }
+
+      if (error.response.status === 403) {
+        return apiResponse.error(
+          403,
+          'API rate limit exceeded'
+        )
+      }
+    }
+    return apiResponse.error(
+      500,
+      'Internal Server Error',
+      { message: error.message }
     )
   }
 }
