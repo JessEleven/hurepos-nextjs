@@ -6,45 +6,62 @@ import {
 }
   from '@/resources/assets/user-card-icons'
 
-export default function CardSocial () {
+function valideUrl (url) {
+  // Verificar si la URL comienza con "http://" o "https://"
+  if (!/^https?:\/\//i.test(url)) {
+    // Agregar "https://" al principio de la URL
+    url = 'https://' + url
+  }
+  return url
+}
+
+export default function CardSocial ({ data }) {
   return (
     <div className='flex flex-col mt-4'>
       <div className='grid gap-4 grid-cols-1 md:grid-cols-2 font-medium'>
-        <article className='media-card'>
-          <MapPinIcon />
-          <h3 className='media-info'>Location</h3>
-        </article>
+        {data.location && (
+          <article className='media-card'>
+            <MapPinIcon />
+            <h3 className='media-info'>{data.location}</h3>
+          </article>
+        )}
 
-        <article className='media-card media-hover'>
-          <LinkIcon />
-          <a
-            datatype='Blog'
-            className='media-info'
-            href='#'
-            rel='noreferrer'
-            target='_blank'
-          >
-            Blog
-          </a>
-        </article>
+        {data.blog && (
+          <article className='media-card media-hover'>
+            <LinkIcon />
+            <a
+              datatype='Blog'
+              className='media-info'
+              href={valideUrl(data.blog)}
+              rel='noreferrer'
+              target='_blank'
+            >
+              {data.blog}
+            </a>
+          </article>
+        )}
 
-        <article className='media-card media-hover'>
-          <TwitterIcon />
-          <a
-            data-type='Twitter'
-            className='media-info'
-            href='#'
-            rel='noreferrer'
-            target='_blank'
-          >
-            <span>@</span>Twitter
-          </a>
-        </article>
+        {data.twitter_username && (
+          <article className='media-card media-hover'>
+            <TwitterIcon />
+            <a
+              data-type='X'
+              className='media-info'
+              href={`https://www.x.com/${data.twitter_username}`}
+              rel='noreferrer'
+              target='_blank'
+            >
+              <span>@</span>{data.twitter_username}
+            </a>
+          </article>
+        )}
 
-        <article className='media-card'>
-          <BuildingIcon />
-          <h3 className='media-info'>Company</h3>
-        </article>
+        {data.company && (
+          <article className='media-card'>
+            <BuildingIcon />
+            <h3 className='media-info'>{data.company}</h3>
+          </article>
+        )}
       </div>
     </div>
   )
