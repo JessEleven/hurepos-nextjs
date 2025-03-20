@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Logo from '../../public/logo.svg'
-import { GitHubIcon } from '@/resources/assets/nav-icons'
+import { GitHubIcon, InfoCircleIcon } from '@/resources/assets/nav-icons'
 import ThemeDropdown from '@/components/theme-dropdown'
 import MobileMenu from '@/components/mobile/mobile-menu'
 
@@ -20,6 +20,9 @@ export default function Nav () {
         </Link>
 
         <div className='hidden md:flex md:items-center md:gap-x-[5px]'>
+          <Link href='/about' className='hover-icon'>
+            <InfoCircleIcon />
+          </Link>
           <a
             datatype='GitHub'
             className='hover-icon'

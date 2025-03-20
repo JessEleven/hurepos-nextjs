@@ -1,6 +1,7 @@
 import { ChevronDownIcon, ChevronUpIcon } from '@/resources/assets/mobile-icons'
 import { useState } from 'react'
 import MobileTheme from './mobile-theme'
+import Link from 'next/link'
 
 export default function MobileDropdown () {
   const [activeDropdown, setActiveDropdown] = useState(false)
@@ -50,6 +51,12 @@ export default function MobileDropdown () {
           Information content
         </article>
       )}
+
+      <div className='mt-2 px-3 py-1'>
+        <Link href='/about' className='text-base font-medium'>
+          About
+        </Link>
+      </div>
 
       <div className='px-3 mt-3'>
         <MobileTheme />
