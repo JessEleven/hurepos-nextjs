@@ -24,8 +24,8 @@ export async function GET (req) {
   } catch (error) {
     return apiResponse.error(
       500,
-      'Error reading directory',
-      error
+      'Internal Server Error',
+      { message: error.message }
     )
   }
 }
