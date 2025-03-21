@@ -1,18 +1,13 @@
-import axios from 'axios'
-import { headers } from 'next/headers'
+import { promises as fs } from 'fs'
+import path from 'path'
 
 export async function treeFile () {
   try {
-    const host = headers().get('host')
-    const protocol = process.env.NODE_ENV === 'production' ? 'https' : 'http'
-    const baseUrl = `${protocol}://${host}`
+    const filePath = path.join(process.cwd(), 'public', 'file-tree.json')
+    const fileContent = await fs.readFile(filePath, 'utf-8')
 
-    const response = await axios.get(`${baseUrl}/api/file-tree?path=src`)
-    return response.data.data
+    return JSON.parse(fileContent)
   } catch (error) {
-    if (error.response) {
-      throw error
-    }
-    throw new Error('Error reading directory')
+    throw new Error('Error reading file tree JSON')
   }
 }
