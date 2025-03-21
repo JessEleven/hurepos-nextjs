@@ -6,46 +6,46 @@
     {
       "name": "app",
       "type": "folder",
-      "path": "src\\app",
+      "path": "app",
       "content": [
         {
           "name": "about",
           "type": "folder",
-          "path": "src\\app\\about",
+          "path": "app\\about",
           "content": [
             {
               "name": "page.jsx",
               "type": "file",
-              "path": "src\\app\\about\\page.jsx"
+              "path": "app\\about\\page.jsx"
             }
           ]
         },
         {
           "name": "api",
           "type": "folder",
-          "path": "src\\app\\api",
+          "path": "app\\api",
           "content": [
             {
               "name": "file-tree",
               "type": "folder",
-              "path": "src\\app\\api\\file-tree",
+              "path": "app\\api\\file-tree",
               "content": [
                 {
                   "name": "route.js",
                   "type": "file",
-                  "path": "src\\app\\api\\file-tree\\route.js"
+                  "path": "app\\api\\file-tree\\route.js"
                 }
               ]
             },
             {
               "name": "search-user",
               "type": "folder",
-              "path": "src\\app\\api\\search-user",
+              "path": "app\\api\\search-user",
               "content": [
                 {
                   "name": "route.js",
                   "type": "file",
-                  "path": "src\\app\\api\\search-user\\route.js"
+                  "path": "app\\api\\search-user\\route.js"
                 }
               ]
             }
@@ -54,156 +54,168 @@
         {
           "name": "layout.jsx",
           "type": "file",
-          "path": "src\\app\\layout.jsx"
+          "path": "app\\layout.jsx"
         },
         {
           "name": "page.jsx",
           "type": "file",
-          "path": "src\\app\\page.jsx"
+          "path": "app\\page.jsx"
         }
       ]
     },
     {
       "name": "components",
       "type": "folder",
-      "path": "src\\components",
+      "path": "components",
       "content": [
         {
           "name": "cards",
           "type": "folder",
-          "path": "src\\components\\cards",
+          "path": "components\\cards",
           "content": [
             {
               "name": "card-info.jsx",
               "type": "file",
-              "path": "src\\components\\cards\\card-info.jsx"
+              "path": "components\\cards\\card-info.jsx"
             },
             {
               "name": "card-social.jsx",
               "type": "file",
-              "path": "src\\components\\cards\\card-social.jsx"
+              "path": "components\\cards\\card-social.jsx"
             }
           ]
         },
         {
           "name": "mobile",
           "type": "folder",
-          "path": "src\\components\\mobile",
+          "path": "components\\mobile",
           "content": [
             {
               "name": "mobile-dropdown.jsx",
               "type": "file",
-              "path": "src\\components\\mobile\\mobile-dropdown.jsx"
+              "path": "components\\mobile\\mobile-dropdown.jsx"
             },
             {
               "name": "mobile-menu.jsx",
               "type": "file",
-              "path": "src\\components\\mobile\\mobile-menu.jsx"
+              "path": "components\\mobile\\mobile-menu.jsx"
             },
             {
               "name": "mobile-theme.jsx",
               "type": "file",
-              "path": "src\\components\\mobile\\mobile-theme.jsx"
+              "path": "components\\mobile\\mobile-theme.jsx"
             }
           ]
         },
         {
           "name": "file-tree.jsx",
           "type": "file",
-          "path": "src\\components\\file-tree.jsx"
+          "path": "components\\file-tree.jsx"
         },
         {
           "name": "nav.jsx",
           "type": "file",
-          "path": "src\\components\\nav.jsx"
+          "path": "components\\nav.jsx"
         },
         {
           "name": "search-user.jsx",
           "type": "file",
-          "path": "src\\components\\search-user.jsx"
+          "path": "components\\search-user.jsx"
         },
         {
           "name": "theme-dropdown.jsx",
           "type": "file",
-          "path": "src\\components\\theme-dropdown.jsx"
+          "path": "components\\theme-dropdown.jsx"
         }
       ]
     },
     {
       "name": "Context",
       "type": "folder",
-      "path": "src\\Context",
+      "path": "Context",
       "content": [
         {
           "name": "search-context.jsx",
           "type": "file",
-          "path": "src\\Context\\search-context.jsx"
+          "path": "Context\\search-context.jsx"
         }
       ]
     },
     {
       "name": "providers",
       "type": "folder",
-      "path": "src\\providers",
+      "path": "providers",
       "content": [
         {
           "name": "theme-children.jsx",
           "type": "file",
-          "path": "src\\providers\\theme-children.jsx"
+          "path": "providers\\theme-children.jsx"
         }
       ]
     },
     {
       "name": "resources",
       "type": "folder",
-      "path": "src\\resources",
+      "path": "resources",
       "content": [
         {
           "name": "assets",
           "type": "folder",
-          "path": "src\\resources\\assets",
+          "path": "resources\\assets",
           "content": [
             {
               "name": "file-tree-icons.jsx",
               "type": "file",
-              "path": "src\\resources\\assets\\file-tree-icons.jsx"
+              "path": "resources\\assets\\file-tree-icons.jsx"
             },
             {
               "name": "mobile-icons.jsx",
               "type": "file",
-              "path": "src\\resources\\assets\\mobile-icons.jsx"
+              "path": "resources\\assets\\mobile-icons.jsx"
             },
             {
               "name": "nav-icons.jsx",
               "type": "file",
-              "path": "src\\resources\\assets\\nav-icons.jsx"
+              "path": "resources\\assets\\nav-icons.jsx"
             },
             {
               "name": "search-user-icons.jsx",
               "type": "file",
-              "path": "src\\resources\\assets\\search-user-icons.jsx"
+              "path": "resources\\assets\\search-user-icons.jsx"
             },
             {
               "name": "user-card-icons.jsx",
               "type": "file",
-              "path": "src\\resources\\assets\\user-card-icons.jsx"
+              "path": "resources\\assets\\user-card-icons.jsx"
             }
           ]
         },
         {
           "name": "css",
           "type": "folder",
-          "path": "src\\resources\\css",
+          "path": "resources\\css",
           "content": [
             {
               "name": "card.css",
               "type": "file",
-              "path": "src\\resources\\css\\card.css"
+              "path": "resources\\css\\card.css"
             },
             {
               "name": "globals.css",
               "type": "file",
-              "path": "src\\resources\\css\\globals.css"
+              "path": "resources\\css\\globals.css"
+            }
+          ]
+        },
+        {
+          "name": "json",
+          "type": "folder",
+          "path": "resources\\json",
+          "content": [
+            {
+              "name": "file-tree.json",
+              "type": "file",
+              "path": "resources\\json\\file-tree.json"
             }
           ]
         }
@@ -212,46 +224,46 @@
     {
       "name": "scripts",
       "type": "folder",
-      "path": "src\\scripts",
+      "path": "scripts",
       "content": [
         {
           "name": "generate-file-tree.js",
           "type": "file",
-          "path": "src\\scripts\\generate-file-tree.js"
+          "path": "scripts\\generate-file-tree.js"
         }
       ]
     },
     {
       "name": "utils",
       "type": "folder",
-      "path": "src\\utils",
+      "path": "utils",
       "content": [
         {
           "name": "api",
           "type": "folder",
-          "path": "src\\utils\\api",
+          "path": "utils\\api",
           "content": [
             {
               "name": "api-response.js",
               "type": "file",
-              "path": "src\\utils\\api\\api-response.js"
+              "path": "utils\\api\\api-response.js"
             },
             {
               "name": "file-tree.js",
               "type": "file",
-              "path": "src\\utils\\api\\file-tree.js"
+              "path": "utils\\api\\file-tree.js"
             },
             {
               "name": "github.js",
               "type": "file",
-              "path": "src\\utils\\api\\github.js"
+              "path": "utils\\api\\github.js"
             }
           ]
         },
         {
           "name": "theme.js",
           "type": "file",
-          "path": "src\\utils\\theme.js"
+          "path": "utils\\theme.js"
         }
       ]
     }
