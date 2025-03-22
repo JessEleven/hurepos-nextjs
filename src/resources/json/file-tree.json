@@ -74,14 +74,19 @@
           "path": "components\\cards",
           "content": [
             {
-              "name": "card-info.jsx",
+              "name": "info-card.jsx",
               "type": "file",
-              "path": "components\\cards\\card-info.jsx"
+              "path": "components\\cards\\info-card.jsx"
             },
             {
-              "name": "card-social.jsx",
+              "name": "repo-card.jsx",
               "type": "file",
-              "path": "components\\cards\\card-social.jsx"
+              "path": "components\\cards\\repo-card.jsx"
+            },
+            {
+              "name": "social-card.jsx",
+              "type": "file",
+              "path": "components\\cards\\social-card.jsx"
             }
           ]
         },
@@ -130,14 +135,14 @@
       ]
     },
     {
-      "name": "Context",
+      "name": "context",
       "type": "folder",
-      "path": "Context",
+      "path": "context",
       "content": [
         {
           "name": "search-context.jsx",
           "type": "file",
-          "path": "Context\\search-context.jsx"
+          "path": "context\\search-context.jsx"
         }
       ]
     },

@@ -1,7 +1,7 @@
 export const CodeIcon = (props) => (
   <svg
-    width={18}
-    height={18}
+    width={20}
+    height={20}
     fill='none'
     viewBox='0 0 24 24'
     stroke='currentColor'
@@ -17,8 +17,8 @@ export const CodeIcon = (props) => (
 
 export const FolderIcon = (props) => (
   <svg
-    width={18}
-    height={18}
+    width={20}
+    height={20}
     fill='none'
     viewBox='0 0 24 24'
     stroke='currentColor'
@@ -34,8 +34,8 @@ export const FolderIcon = (props) => (
 
 export const FolderOpenIcon = (props) => (
   <svg
-    width={18}
-    height={18}
+    width={20}
+    height={20}
     fill='none'
     viewBox='0 0 24 24'
     stroke='currentColor'
@@ -51,8 +51,8 @@ export const FolderOpenIcon = (props) => (
 
 export const ChevronDownIcon = (props) => (
   <svg
-    width={18}
-    height={18}
+    width={20}
+    height={20}
     fill='none'
     viewBox='0 0 24 24'
     stroke='currentColor'
@@ -68,8 +68,8 @@ export const ChevronDownIcon = (props) => (
 
 export const ChevronRightIcon = (props) => (
   <svg
-    width={18}
-    height={18}
+    width={20}
+    height={20}
     fill='none'
     viewBox='0 0 24 24'
     stroke='currentColor'

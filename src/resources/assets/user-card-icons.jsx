@@ -28,6 +28,23 @@ export const RepositoryIcon = (props) => (
   </svg>
 )
 
+export const BracketsAngleIcon = (props) => (
+  <svg
+    width={24}
+    height={24}
+    fill='none'
+    viewBox='0 0 24 24'
+    stroke='currentColor'
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    strokeWidth={2}
+    {...props}
+  >
+    <path stroke='none' d='M0 0h24v24H0z' />
+    <path d='m8 4-5 8 5 8M16 4l5 8-5 8' />
+  </svg>
+)
+
 export const UsersIcon = (props) => (
   <svg
     width={24}

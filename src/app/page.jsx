@@ -1,12 +1,12 @@
-import Cardinfo from '@/components/cards/card-info'
+import InfoCard from '@/components/cards/info-card'
 import SearchUser from '@/components/search-user'
-import { SearchContext } from '@/Context/search-context'
+import { SearchContext } from '@/context/search-context'
 
 export default function Home () {
   return (
     <SearchContext>
       <SearchUser />
-      <Cardinfo />
+      <InfoCard />
     </SearchContext>
   )
 }

@@ -1,12 +1,12 @@
 'use client'
 
 import Image from 'next/image'
-import CardSocial from './card-social'
-import { RepositoryIcon, UsersIcon } from '@/resources/assets/user-card-icons'
 import { GitHubIcon } from '@/resources/assets/nav-icons'
-import { useSearch } from '@/Context/search-context'
+import { useSearch } from '@/context/search-context'
+import RepoCard from './repo-card'
+import SocialCard from './social-card'
 
-export default function Cardinfo () {
+export default function InfoCard () {
   const { userData } = useSearch()
   const data = userData?.data
 
@@ -82,35 +82,9 @@ export default function Cardinfo () {
                   </p>
                 )}
 
-                <div className='w-full mt-4 rounded-md border border-neutral-300 dark:border-neutral-700'>
-                  <div className='grid grid-cols-3 py-5'>
-                    <article className='repo-card'>
-                      <div className='repo-icon'>
-                        <RepositoryIcon />
-                      </div>
-                      <h3 className='repo-title'>Repositories</h3>
-                      <h3 className='repo-number'>{data?.public_repos}</h3>
-                    </article>
+                <RepoCard data={data} />
 
-                    <article className='repo-card'>
-                      <div className='repo-icon'>
-                        <UsersIcon />
-                      </div>
-                      <h3 className='repo-title'>Followers</h3>
-                      <h3 className='repo-number'>{data?.followers}</h3>
-                    </article>
-
-                    <article className='repo-card'>
-                      <div className='repo-icon'>
-                        <UsersIcon />
-                      </div>
-                      <h3 className='repo-title'>Following</h3>
-                      <h3 className='repo-number'>{data?.following}</h3>
-                    </article>
-                  </div>
-                </div>
-
-                <CardSocial data={data} />
+                <SocialCard data={data} />
               </div>
             </div>
           </div>

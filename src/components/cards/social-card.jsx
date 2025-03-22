@@ -15,7 +15,7 @@ function valideUrl (url) {
   return url
 }
 
-export default function CardSocial ({ data }) {
+export default function SocialCard ({ data }) {
   const result = (data?.location || data?.blog || data?.twitter_username || data?.company)
 
   return (
