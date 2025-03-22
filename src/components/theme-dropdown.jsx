@@ -1,7 +1,7 @@
 'use client'
 
 import { LoaderIcon } from '@/resources/assets/search-user-icons'
-import { themeOptions, useThemeLogic } from '@/utils/theme'
+import { themeOptions, useThemeLogic } from '@/utils/theme.js'
 
 export default function ThemeDropdown () {
   const { mounted, open, setOpen, setTheme, selectedOption } = useThemeLogic()

@@ -1,4 +1,4 @@
-import { themeOptions, useThemeLogic } from '@/utils/theme'
+import { themeOptions, useThemeLogic } from '@/utils/theme.js'
 
 export default function MobileTheme () {
   const { theme, setOpen, setTheme } = useThemeLogic()

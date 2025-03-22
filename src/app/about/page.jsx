@@ -1,6 +1,6 @@
 import ApiReference from '@/components/api-reference'
 import FileTree from '@/components/file-tree'
-import { treeFile } from '@/utils/api/file-tree'
+import { treeFile } from '@/utils/api/file-tree.js'
 import { headers } from 'next/headers'
 
 export default async function AboutPage () {

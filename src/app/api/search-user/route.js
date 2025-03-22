@@ -1,5 +1,5 @@
-import apiResponse from '@/utils/api/api-response'
-import { fetchGitHubUser } from '@/utils/api/github'
+import apiResponse from '@/utils/api/api-response.js'
+import { fetchGitHubUser } from '@/utils/api/github.js'
 
 export async function GET (req) {
   const { searchParams } = new URL(req.url)
