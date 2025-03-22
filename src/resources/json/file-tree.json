@@ -140,14 +140,14 @@
       ]
     },
     {
-      "name": "context",
+      "name": "libs",
       "type": "folder",
-      "path": "context",
+      "path": "libs",
       "content": [
         {
-          "name": "search-context.jsx",
+          "name": "search-lib.jsx",
           "type": "file",
-          "path": "context\\search-context.jsx"
+          "path": "libs\\search-lib.jsx"
         }
       ]
     },
