@@ -113,6 +113,11 @@
           ]
         },
         {
+          "name": "api-reference.jsx",
+          "type": "file",
+          "path": "components\\api-reference.jsx"
+        },
+        {
           "name": "file-tree.jsx",
           "type": "file",
           "path": "components\\file-tree.jsx"
@@ -168,6 +173,11 @@
           "type": "folder",
           "path": "resources\\assets",
           "content": [
+            {
+              "name": "api-reference-icons.jsx",
+              "type": "file",
+              "path": "resources\\assets\\api-reference-icons.jsx"
+            },
             {
               "name": "file-tree-icons.jsx",
               "type": "file",

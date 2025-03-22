@@ -50,7 +50,7 @@ export default function FileTree ({ tree }) {
   }
 
   return (
-    <article className='w-full md:min-w-[310px] rounded-lg shadow-sm dark:shadow-none bg-neutral-200/25 dark:bg-neutral-700/25 pl-3 py-3 pr-1.5'>
+    <article className='rounded-lg shadow-sm dark:shadow-none bg-neutral-200/25 dark:bg-neutral-700/25 pl-3 py-3 pr-1.5'>
       {tree && (
         <div className='h-52 overflow-y-auto text-sm font-normal'>
           <div

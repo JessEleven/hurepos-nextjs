@@ -1,7 +1,7 @@
 {
   "name": "hurepos-nextjs",
   "description": "To search for information from GitHub users.",
-  "version": "0.11.10",
+  "version": "0.12.10",
   "private": true,
   "type": "module",
   "scripts": {
@@ -21,6 +21,7 @@
     "next-themes": "0.4.6",
     "postcss": "8.5.3",
     "react": "18.3.1",
+    "react-copy-to-clipboard": "5.1.0",
     "react-dom": "18.3.1",
     "tailwindcss": "4.0.13"
   },
