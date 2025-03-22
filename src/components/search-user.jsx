@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { useSearch } from '@/libs/search-lib'
+import { useSearch } from '@/context/search-context'
 import { LoaderIcon, SearchIcon } from '@/resources/assets/search-user-icons'
 
 export default function SearchUser () {

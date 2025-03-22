@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { GitHubIcon } from '@/resources/assets/nav-icons'
-import { useSearch } from '@/libs/search-lib'
+import { useSearch } from '@/context/search-context'
 import RepoCard from './repo-card'
 import SocialCard from './social-card'
 

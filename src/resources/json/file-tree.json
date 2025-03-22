@@ -69,6 +69,23 @@
       "path": "components",
       "content": [
         {
+          "name": "api-reference",
+          "type": "folder",
+          "path": "components\\api-reference",
+          "content": [
+            {
+              "name": "endpoint-file-tree.jsx",
+              "type": "file",
+              "path": "components\\api-reference\\endpoint-file-tree.jsx"
+            },
+            {
+              "name": "endpoint-github.jsx",
+              "type": "file",
+              "path": "components\\api-reference\\endpoint-github.jsx"
+            }
+          ]
+        },
+        {
           "name": "cards",
           "type": "folder",
           "path": "components\\cards",
@@ -113,11 +130,6 @@
           ]
         },
         {
-          "name": "api-reference.jsx",
-          "type": "file",
-          "path": "components\\api-reference.jsx"
-        },
-        {
           "name": "file-tree.jsx",
           "type": "file",
           "path": "components\\file-tree.jsx"
@@ -140,14 +152,14 @@
       ]
     },
     {
-      "name": "libs",
+      "name": "context",
       "type": "folder",
-      "path": "libs",
+      "path": "context",
       "content": [
         {
-          "name": "search-lib.jsx",
+          "name": "search-context.jsx",
           "type": "file",
-          "path": "libs\\search-lib.jsx"
+          "path": "context\\search-context.jsx"
         }
       ]
     },
