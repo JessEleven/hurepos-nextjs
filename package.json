@@ -1,7 +1,7 @@
 {
   "name": "hurepos-nextjs",
   "description": "To search for information from GitHub users.",
-  "version": "0.13.15",
+  "version": "0.13.16",
   "private": true,
   "type": "module",
   "scripts": {

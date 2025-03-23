@@ -53,8 +53,8 @@ export default function MobileDropdown () {
       )}
 
       <div className='mt-2 px-3 py-1'>
-        <Link href='/about' className='text-base font-medium'>
-          About
+        <Link href='/about-api' className='text-base font-medium'>
+          About API
         </Link>
       </div>
 

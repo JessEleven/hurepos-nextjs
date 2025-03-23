@@ -9,14 +9,14 @@
       "path": "app",
       "content": [
         {
-          "name": "about",
+          "name": "about-api",
           "type": "folder",
-          "path": "app\\about",
+          "path": "app\\about-api",
           "content": [
             {
               "name": "page.jsx",
               "type": "file",
-              "path": "app\\about\\page.jsx"
+              "path": "app\\about-api\\page.jsx"
             }
           ]
         },

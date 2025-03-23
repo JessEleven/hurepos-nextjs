@@ -12,10 +12,8 @@ export default async function AboutPage () {
 
   return (
     <main className='mx-5 md:mx-0 mt-10 md:mt-[50px] block'>
-      <div className='block md:flex gap-x-0 md:gap-x-5'>
-        <div className='w-full md:min-w-[325px] 2xl:max-w-[315px]'>
-          <FileTree tree={tree} />
-        </div>
+      <div className='grid md:grid-cols-2 gap-x-0 md:gap-x-5'>
+        <FileTree tree={tree} />
 
         <article className='mt-5 md:mt-0'>
           <section role='region' aria-label='File tree'>
@@ -48,7 +46,7 @@ export default async function AboutPage () {
 
         <EndpointGithub />
 
-        <section role='region' aria-label='Endpoint GitHub' className='p-3 mt-3.5 rounded-md border border-neutral-300 dark:border-neutral-700'>
+        <section role='region' aria-label='Endpoint GitHub' className='p-3 mt-3.5 mb-7 md:mb-0 rounded-md border border-neutral-300 dark:border-neutral-700'>
           <h3 className='text-base font-medium'>Endpoint</h3>
           <div className='flex items-center gap-x-3'>
             <h4 className='px-2.5 py-0.5 text-sm border border-green-500 text-green-500 font-medium rounded-sm'>GET</h4>

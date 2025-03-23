@@ -20,7 +20,7 @@ export default function RootLayout ({ children }) {
     <html lang='en' suppressHydrationWarning>
       <body className={`${poppins.className} bg-neutral-50 dark:bg-neutral-800`}>
         <ThemeChildren>
-          <div className='w-full md:w-[715px] 2xl:w-[785px] mx-auto text-neutral-900 dark:text-neutral-50'>
+          <div className='w-full md:w-[680px] 2xl:w-[780px] mx-auto text-neutral-900 dark:text-neutral-50'>
             <Nav />
             {children}
           </div>
