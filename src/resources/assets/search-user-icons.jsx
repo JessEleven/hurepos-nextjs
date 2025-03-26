@@ -24,7 +24,7 @@ export const SearchIcon = (props) => (
     strokeWidth={2}
     {...props}
   >
-    <path stroke='none' d='M0 0h24v24H0z' />
-    <path d='M3 10a7 7 0 1 0 14 0 7 7 0 1 0-14 0M21 21l-6-6' />
+    <circle cx={11} cy={11} r={8} />
+    <path d='m21 21-4.3-4.3' />
   </svg>
 )
